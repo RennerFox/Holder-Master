@@ -35,17 +35,21 @@
             </ul>
         </div>
 
-        <div id="grafico_total">
-            <div id="Posicao_total" style="width: 1000px; height: 500px; "></div>
-        </div>
-        <div id="Posicao_acao" style="width: 1000px; height: 500px; display: none"></div>
-        <div id="Posicao_tesouro" style="width: 1000px; height: 500px; display: none"></div>
+
+        <div id="Posicao_total" style="width: 1000px; height: 500px;"></div>
+
+        <div id="Posicao_acao" style="width: 1000px; height: 500px; display: none;"></div>
+
+        <div id="Posicao_tesouro" style="width: 1000px; height: 500px; display: none;"></div>
+
         <div id="Posicao_bdr" style="width: 1000px; height: 500px; display: none;"></div>
+
         <div id="right">
             <ul>
-                <li><button class="cta" onclick="mostrar_acao()">Açoes</button></li>
-                <li><button class="cta" onclick="mostrar_acao()">Tesouro</button></li>
-                <li><button class="cta" onclick="mostrar_acao()">Bdr</button></li>
+                <li><button class="cta" onclick="myFunction('Posicao_total', 'Posicao_acao' , 'Posicao_tesouro', 'Posicao_bdr')">total</button></li>
+                <li><button class="cta" onclick="myFunction('Posicao_acao', 'Posicao_total' , 'Posicao_tesouro', 'Posicao_bdr')">Açoes</button></li>
+                <li><button class="cta" onclick="myFunction('Posicao_tesouro', 'Posicao_total' , 'Posicao_acao', 'Posicao_bdr')">Tesouro</button></li>
+                <li><button class="cta" onclick="myFunction('Posicao_bdr', 'Posicao_total' , 'Posicao_acao', 'Posicao_tesouro')">Bdr</button></li>
                 <li><button class="cta">LCI</button></li>
             </ul>
         </div>
@@ -79,5 +83,23 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="./js/pie.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    function myFunction(Mostrar, esconder_1, esconder_2, esconder_3) {
+        var Mostrar_grafico = document.getElementById(Mostrar);
+        var esconder_grafico1 = document.getElementById(esconder_1);
+        var esconder_grafico2 = document.getElementById(esconder_2);
+        var esconder_grafico3 = document.getElementById(esconder_3);
+        if (Mostrar_grafico.style.display === "none") {
+            Mostrar_grafico.style.display = "block";
+            esconder_grafico1.style.display = "none";
+            esconder_grafico2.style.display = "none";
+            esconder_grafico3.style.display = "none";
+        } else {
+            Mostrar_grafico.style.display = "block";
+            console.log("block");
+        }
+    }
+</script>
 
 </html>

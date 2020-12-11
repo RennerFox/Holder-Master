@@ -68,12 +68,12 @@ function Posicao_bdr() {
     ['TSLA34', 600],
     ['NFLX34', 400],
     ['DISB34', 500],
-    ['U1BE34', 500]
+    ['U1BE34', 500],
   ]);
 
   var options = {
     legend: 'none',
-    colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
+    colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('Posicao_bdr'));
