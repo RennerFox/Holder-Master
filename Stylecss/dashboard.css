@@ -2,7 +2,6 @@
 
 
 #dashboard{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: flex;
@@ -10,7 +9,6 @@
 }
 
 #left {
-    border: 1px solid red;
     align-items: left;
     text-align: center;
     padding: 3px;
@@ -18,11 +16,10 @@
 #left li {
     padding: 6px;
     margin: 7px;
-    border: 1px solid red;
+
 }
 
 #right{
-    border: 1px solid red;
     align-items: right;
     text-align: center;
 }

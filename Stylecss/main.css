@@ -33,7 +33,6 @@ li {
 }
 
 body, html {
-    background-image: linear-gradient(to bottom, #ff6cab, #fa6cff, #a608bb, #fa6cff, #ff6cab);
     height: 100%;
     font-family: Poppins-Regular, sans-serif;
 }
@@ -43,10 +42,6 @@ a {
     font-size: 14px;
     text-decoration: none;
     color: #666666;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
 }
 a:focus {
 	outline: none !important;
